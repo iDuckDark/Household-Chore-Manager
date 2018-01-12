@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c3e50"
+    android:padding="20dp"
+    tools:context="com.uottawa.linkedpizza.householdchoremanager.LoginActivity">
+
+
+    <Button
+        android:id="@+id/sign_out"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Click Here To Sign Out"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewName"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="-24dp"
+        tools:layout_editor_absoluteY="33dp">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="11dp"
+            android:text="CLEAR DATABASE"
+            tools:layout_editor_absoluteX="152dp"
+            tools:layout_editor_absoluteY="311dp" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton_register"
+            android:fontFamily="@font/exo"
+            android:text="Register"
+            android:visibility="gone"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginLoadingText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="73dp"
+            android:fontFamily="@font/exo"
+            android:text="@string/about_app_name"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/exo"
+            android:text="@string/about_course_project"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/about_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_title2"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/exo"
+            android:text="@string/login_team_name"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/loadingPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="175dp"
+                android:indeterminate="true"
+                android:indeterminateTint="#bdc3c7"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/login_app_icon"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignBottom="@+id/progressBar"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/appicon_2" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/loginLoadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="225dp"
+            android:gravity="center"
+            android:text="Loading..."
+            android:fontFamily="@font/exo"
+            android:textColor="#bdc3c7"
+            android:textSize="20dp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="96dp"
+            tools:layout_editor_absoluteY="109dp" />
+
+        <!--Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/mybutton_googlesignin"
+            android:text="Login with Google"
+            android:textColor="@android:color/white">
+
+        </Button -->
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app.isDarkTheme="true">
+
+        </com.google.android.gms.common.SignInButton>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

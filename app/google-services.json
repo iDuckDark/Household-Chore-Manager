@@ -1,0 +1,111 @@
+{
+  "project_info": {
+    "project_number": "830888069104",
+    "firebase_url": "https://household-chore-manager-id.firebaseio.com",
+    "project_id": "household-chore-manager-id",
+    "storage_bucket": "household-chore-manager-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830888069104:android:817aeb687e390f36",
+        "android_client_info": {
+          "package_name": "com.uottawa.linkedpizza.householdchoremanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830888069104-fqavcf41tg2134void4jkjjk1t5jkd00.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uottawa.linkedpizza.householdchoremanager",
+            "certificate_hash": "347ff789175da72eac057d772e380f2d25c9a5a1"
+          }
+        },
+        {
+          "client_id": "830888069104-6pa9vcu1jbiocnfvbvkrpi4ak16nql4i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uottawa.linkedpizza.householdchoremanager",
+            "certificate_hash": "05a1ffd2388a80d83fb955ab5cd8ce4f6f21ae48"
+          }
+        },
+        {
+          "client_id": "830888069104-6892ct0u3k3k2i2oqui9e8kvheq3s8p6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uottawa.linkedpizza.householdchoremanager",
+            "certificate_hash": "882fa8057f023566c5e6b8f1ab93bf29384c4b84"
+          }
+        },
+        {
+          "client_id": "830888069104-kjfrvbum9vhop6u9h4kgfbdp88d40l3k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uottawa.linkedpizza.householdchoremanager",
+            "certificate_hash": "141c3492724cacc3c0caf46eeb6c6c1b675fdb42"
+          }
+        },
+        {
+          "client_id": "830888069104-lpuhcbdf8qdiqeckl66b4s652tv8g2ds.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uottawa.linkedpizza.householdchoremanager",
+            "certificate_hash": "277bca58176cc8d83396beebfbd88f6b6a1a50f1"
+          }
+        },
+        {
+          "client_id": "830888069104-5kk6i6lr6lltp03kurvnl2ena2v5dled.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uottawa.linkedpizza.householdchoremanager",
+            "certificate_hash": "caef39bd29cf2e70cb2528830354ad74a0548db5"
+          }
+        },
+        {
+          "client_id": "830888069104-je3l09vjf0e7qml8lpvp8e1scotf4vdb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uottawa.linkedpizza.householdchoremanager",
+            "certificate_hash": "b009208fabc02fbdc08e73c135d23cfe02f1885b"
+          }
+        },
+        {
+          "client_id": "830888069104-3c0q2ih41v148qu8mkfq77gl3dv2ra28.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uottawa.linkedpizza.householdchoremanager",
+            "certificate_hash": "fecdbee9531ad847a6ad7fde10ceaaff5cb999c8"
+          }
+        },
+        {
+          "client_id": "830888069104-4oc4st7u6j4onu098vhchsd65ibvv6ln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRFb71lkdYvvXPG238NRf3-DZPQ6xHgxI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830888069104-4oc4st7u6j4onu098vhchsd65ibvv6ln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
