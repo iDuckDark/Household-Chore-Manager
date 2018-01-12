@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="team_name">LinkedPizza.java</string>
+    <string name="btnLogout_text">Logout</string>
+    <string name="txtNewItem_hint">new item</string>
+    <string name="about_course_project">SEG2105A FALL 2017 PROJECT</string>
+    <string name="about_app_name">Household Chore Manager</string>
+    <string name="about_developed_by">developed by LinkedPizza.java</string>
+    <string name="about_team_members">Team members</string>
+    <string name="about_team_member_names">David, Harjote, Nevin, Nicholas, Waleed</string>
+    <string name="about_app_description">An application that allows family members to monitor task completion.</string>
+    <string name="login_team_name">Team: LinkedPizza.java</string>
+    <string name="btnNewTask_text">New Task...</string>
+</resources>

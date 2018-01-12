@@ -1,2 +1,2 @@
-# Household-Chore-Manager-2
-Household Chore Manager 2
+# SEG-Project
+A household chore management application for android devices.

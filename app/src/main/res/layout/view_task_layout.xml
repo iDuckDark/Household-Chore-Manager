@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="366dp"
+        android:layout_height="553dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/view_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_Notes_title"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@+id/clock_icon"
+            android:layout_toRightOf="@+id/clock_icon"
+            android:fontFamily="exo"
+            android:text="@string/notes"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/view_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_requiredEquipment_title"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/view_Notes_title"
+            android:layout_toRightOf="@+id/view_Notes_title"
+            android:fontFamily="@font/exo"
+            android:text="No required items"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/child_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <ListView
+            android:id="@+id/lstItems"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/btnEditTask"
+            android:layout_alignStart="@+id/view_items"
+            android:layout_below="@+id/view_requiredEquipment_title"
+            android:layout_marginBottom="140dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/items_background" />
+
+        <TextView
+            android:id="@+id/creator"
+            android:layout_width="80dp"
+            android:layout_height="27dp"
+            android:layout_alignLeft="@+id/child_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/child_name"
+            android:layout_below="@+id/child_name"
+            android:fontFamily="@font/exo"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="37dp"
+            tools:text="assignedby" />
+
+        <TextView
+            android:id="@+id/view_requiredEquipment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/view_Notes_title"
+            android:layout_alignStart="@+id/view_Notes_title"
+            android:layout_below="@+id/clock_icon"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/exo"
+            android:text="@string/required_equipment"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="227dp" />
+
+        <TextView
+            android:id="@+id/view_Notes_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/clock_icon"
+            android:layout_alignStart="@+id/clock_icon"
+            android:layout_below="@+id/view_items"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/exo"
+            android:text="@string/notes"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="397dp" />
+
+        <ImageView
+            android:id="@+id/AssignedPersonIcon"
+            android:layout_width="56dp"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="74dp"
+            android:layout_weight="0.1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/Person_Icon"
+            android:maxHeight="42dp"
+            android:maxWidth="42dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/child_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignTop="@+id/AssignedPersonIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="10"
+            android:fontFamily="@font/exo"
+            android:text="@string/assignedpersonname"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <!-- android:background="#9F0000" -->
+
+        <ImageView
+            android:id="@+id/clock_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/calendar_icon"
+            android:layout_alignStart="@+id/calendar_icon"
+            android:layout_below="@+id/calendar_icon"
+            android:layout_marginTop="26dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/clock"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="124dp" />
+
+        <TextView
+            android:id="@+id/time_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/date_view"
+            android:layout_alignStart="@+id/date_view"
+            android:layout_alignTop="@+id/clock_icon"
+            android:layout_weight="1"
+            android:fontFamily="@font/exo"
+            android:text="@string/_1_hour"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="71dp"
+            tools:layout_editor_absoluteY="138dp" />
+
+        <ImageView
+            android:id="@+id/calendar_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="21dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/calendar"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+        <TextView
+            android:id="@+id/date_view"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_above="@+id/clock_icon"
+            android:layout_alignLeft="@+id/view_items"
+            android:layout_alignStart="@+id/view_items"
+            android:layout_alignTop="@+id/calendar_icon"
+            android:layout_weight="1"
+            android:fontFamily="@font/exo"
+            android:text="@string/today"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/AssignedPersonIcon"
+            android:layout_alignEnd="@+id/lstItems"
+            android:layout_alignRight="@+id/lstItems"
+            android:adjustViewBounds="true"
+            android:maxHeight="42dp"
+            android:maxWidth="42dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/how_to"
+            app:srcCompat="@drawable/action_bar_icon"
+            tools:layout_editor_absoluteY="7dp" />
+
+        <TextView
+            android:id="@+id/task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view"
+            android:layout_alignLeft="@+id/AssignedPersonIcon"
+            android:layout_alignStart="@+id/AssignedPersonIcon"
+            android:fontFamily="exo"
+            android:text="Task Name"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="145dp" />
+
+        <Button
+            android:id="@+id/verified"
+            android:layout_width="87dp"
+            android:layout_height="37dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/child_name"
+            android:layout_toRightOf="@+id/child_name"
+            android:layout_weight="0.1"
+            android:background="@drawable/mybutton_done"
+            android:fontFamily="@font/exo"
+            android:maxHeight="42dp"
+            android:maxWidth="42dp"
+            android:padding="2dp"
+            android:text="Task Completed"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="281dp"
+            tools:layout_editor_absoluteY="523dp" />
+
+        <Button
+            android:id="@+id/Delete_Task"
+            android:layout_width="87dp"
+            android:layout_height="37dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/creator"
+            android:layout_toStartOf="@+id/creator"
+            android:layout_weight="0.1"
+            android:background="@drawable/mybutton_delete"
+            android:fontFamily="@font/exo"
+            android:maxHeight="42dp"
+            android:maxWidth="42dp"
+            android:padding="2dp"
+            android:text="Delete Task"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="501dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/AssignedPersonIcon"
+            android:layout_alignStart="@+id/AssignedPersonIcon"
+            android:layout_below="@+id/creator"
+            android:layout_marginTop="12dp"
+            android:text="Status"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toEndOf="@+id/view_notes"
+            android:layout_toRightOf="@+id/view_notes"
+            android:text="Status String"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/how_to"
+        android:layout_width="74dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/mybutton_register"
+        android:fontFamily="@font/exo"
+        android:maxHeight="42dp"
+        android:maxWidth="42dp"
+        android:padding="2dp"
+        android:text="How To"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="74dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/mybutton_googlesignin"
+        android:fontFamily="@font/exo"
+        android:maxHeight="42dp"
+        android:maxWidth="42dp"
+        android:padding="2dp"
+        android:text="Back"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

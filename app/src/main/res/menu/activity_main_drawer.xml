@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group >
+        <item
+            android:id="@+id/nav_open_tasks"
+            android:checkable="false"
+            android:icon="@drawable/open"
+            android:title="Open Tasks"
+            />
+        <item
+            android:id="@+id/nav_my_tasks"
+            android:checkable="false"
+            android:icon="@drawable/mytask"
+            android:title="View My Task" />
+        <item
+            android:id="@+id/nav_shopping_list"
+            android:icon="@drawable/shopping"
+            android:title="Shopping List" />
+        <item
+            android:id="@+id/nav_people"
+            android:icon="@drawable/people"
+            android:title="People" />
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/schedule"
+            android:title="Schedule" />
+        <item
+            android:id="@+id/nav_task_backlog"
+            android:icon="@drawable/completed"
+            android:title="Task Backlog" />
+        <item
+            android:id="@+id/nav_resource_list"
+            android:icon="@drawable/resource_list_icon"
+            android:title="Resource List" />
+        <item
+            android:id="@+id/nav_broom_closet_tools"
+            android:icon="@drawable/closet"
+            android:title="Broom Closet (Tools)"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+            android:title="About" />
+
+    </group>
+
+    <!--item android:title="General">
+        <menu>
+            <group
+                android:id="@+id/extras"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_camera"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="Import" />
+                <item
+                    android:id="@+id/nav_gallery"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="Gallery" />
+                <item
+                    android:id="@+id/nav_manage"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Tools" />
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Send" />
+            </group>
+        </menu>
+    </item -->
+
+</menu>
+

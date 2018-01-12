@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Household Chore Manager</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Family member email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_register">Register to family</string>
+    <string name="action_register_new">Register new family</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">Quick Access</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="swtMyTasksOnly_label">Only show my tasks</string>
+    <string name="btnNewTask_label">New Task</string>
+    <string name="team_name">LinkedPizza.java</string>
+    <string name="team_email_address">linkedpizza.java@gmail.com</string>
+    <string name="btnLogout_text">Logout</string>
+
+
+    <!-- Strings related to PersonsPage-->
+    <string name="current_tasks">Current Tasks</string>
+    <string name="Person_Icon"></string>
+    <string name="PersonName">Person Name</string>
+    <string name="Send_message">Send Message</string>
+
+
+    <!-- Strings related to Task -->
+    <string name="Task_Name">Task Name</string>
+    <string name="Task_Description">Task Description</string>
+    <string name="Image">TaskIcon</string>
+    <string name="txtNewItem_hint">new item</string>
+    <string name="assigned">assigned</string>
+    <string name="detergent">Detergent</string>
+    <string name="sponge">Sponge</string>
+    <string name="bucket">Bucket</string>
+    <string name="required_equipment">Required Equipment</string>
+    <string name="creator">creator</string>
+    <string name="papertowel">Papertowel</string>
+    <string name="textview">TextView</string>
+    <string name="nick">Nick</string>
+    <string name="assignedpersonname">AssignedPersonName</string>
+    <string name="today">Today</string>
+    <string name="release">Release</string>
+    <string name="notes">Notes</string>
+    <string name="_1_hour">1 hour</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_registration">Sign up</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="about_app_name">Household Chore Manager</string>
+    <string name="about_course_project">SEG2105A FALL 2017 PROJECT</string>
+    <string name="about_developed_by">developed by LinkedPizza.java</string>
+    <string name="about_team_members">Team members</string>
+    <string name="about_team_member_names">David, Harjote, Nevin, Nicholas, Waleed</string>
+    <string name="about_app_description">An application that allows family members to monitor task completion.</string>
+    <string name="login_team_name">Team: LinkedPizza.java</string>
+    <string name="btnNewTask_text">New Task...</string>
+    <string name="title_activity_youtube_acitvity">YoutubeAcitvity</string>
+    <string name="title_activity_new_shopping_list">New Shopping List</string>
+    <string name="person_points">Points</string>
+    <string name="person_level">Level</string>
+    <string name="points_n_level" />
+    <string name="point_n_level">Total Points: 100</string>
+</resources>

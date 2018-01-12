@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.uottawa.linkedpizza.householdchoremanager.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <View
+        android:id="@+id/target"
+        android:layout_width="364dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/enter"
+        android:layout_width="341dp"
+        android:layout_height="121dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_red_light"
+        app:layout_constraintBottom_toBottomOf="@+id/target"
+        app:layout_constraintEnd_toEndOf="@+id/target"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/target"
+        app:layout_constraintTop_toTopOf="@+id/target"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/broom"
+        android:layout_width="113dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/target"
+        app:layout_constraintEnd_toEndOf="@+id/target"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/target"
+        app:srcCompat="@drawable/closet" />
+
+    <TextView
+        android:id="@+id/target_text"
+        android:layout_width="369dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif-monospace"
+        android:text="Delete"
+        android:textAlignment="center"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/target"
+        app:layout_constraintEnd_toEndOf="@+id/target"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/target"
+        app:layout_constraintTop_toBottomOf="@+id/broom"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TabHost
+        android:id="@+id/mainTabHost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="62dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2c3e50" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ListView
+                        android:id="@+id/lstShopping"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_above="@+id/txtNewItem"
+                        android:background="@color/shopping_list"
+                        android:clickable="true"
+                        android:descendantFocusability="afterDescendants"
+                        android:focusable="true"
+                        android:listSelector="@color/shopping_list_selected"
+                        android:nextFocusDown="@id/txtNewItem" />
+
+                    <ImageButton
+                        android:id="@+id/btnNewItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="btnNewItemClick"
+                        android:padding="7dp"
+                        app:srcCompat="@android:drawable/ic_menu_add" />
+
+                    <EditText
+                        android:id="@+id/txtNewItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/btnNewItem"
+                        android:ems="10"
+                        android:focusable="auto"
+                        android:hint="@string/txtNewItem_hint"
+                        android:inputType="textPersonName"
+                        android:maxLines="1" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="auto"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="12">
+
+                        <Switch
+                            android:id="@+id/swtMyTasksOnly"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal|end"
+                            android:layout_weight="1"
+                            android:text="@string/swtMyTasksOnly_label"
+                            android:textAlignment="textEnd"
+                            />
+                    </TableRow>
+
+                    <ListView
+                        android:id="@+id/lstTasks"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:clickable="true" >
+
+                    </ListView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="auto"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/lstPeople"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/floating_action_button_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnFloatingAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:onClick="btnFloatingClick"
+            android:src="@drawable/action_bar_icon_2_scaleddown"
+            android:tint="@color/common_google_signin_btn_text_dark_default"
+            app:backgroundTint="#2c3e50"
+            app:elevation="0dp"
+            app:layout_anchorGravity="bottom|right|end" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uottawa.linkedpizza.householdchoremanager.YoutubeAcitvity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <TabHost
+            android:id="@+id/mainTabHost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="62dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#2c3e50" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/youtube"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/previous"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Previous" />
+
+                            <Button
+                                android:id="@+id/next"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Next" />
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/lstShopping"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_above="@id/txtNewItem"
+                            android:descendantFocusability="beforeDescendants"
+                            android:nextFocusDown="@id/txtNewItem">
+
+                        </ListView>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/web_browser"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusable="auto"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <WebView
+                            android:id="@+id/webView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="12">
+
+                        </WebView>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+
+        </TabHost>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="439dp">
+
+    </RelativeLayout>
+
+    <include layout="@layout/content_youtube_acitvity" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registration_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c3e50"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.uottawa.linkedpizza.householdchoremanager.RegistrationActivity">
+
+    <!-- Login progress -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="551dp">
+
+            <ScrollView
+                android:id="@+id/login_form"
+                android:layout_width="match_parent"
+                android:layout_height="567dp">
+
+                <LinearLayout
+                    android:id="@+id/email_login_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="monospace"
+                        android:text="Register Account"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/subtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/exo"
+                        android:text="Sign in with a new email address to register account to your family."
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/code"
+                            android:layout_width="260dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:fontFamily="exo"
+                            android:hint="Family Code (Optional)"
+                            android:inputType="textPersonName"
+                            android:textColor="@android:color/background_light" />
+
+                        <ImageButton
+                            android:id="@+id/about"
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="center"
+                            app:srcCompat="@drawable/about" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="74dp"
+                        android:layout_weight="1" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/exo"
+                        android:hint="Your nickname"
+                        android:inputType="textPersonName"
+                        android:shadowColor="@android:color/white"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default"
+                        android:textColorHighlight="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textColorLink="@android:color/white"
+                        android:textSize="18sp"
+                        android:typeface="normal"
+                        android:visibility="visible" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="21dp"
+                            android:layout_weight="1" />
+
+                        <Switch
+                            android:id="@+id/parent"
+                            android:layout_width="175dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:fontFamily="@font/exo"
+                            android:splitTrack="false"
+                            android:text="Parent account"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            tools:checked="true" />
+
+                        <Space
+                            android:id="@+id/space"
+                            android:layout_width="match_parent"
+                            android:layout_height="73dp"
+                            android:layout_weight="1" />
+
+                        <com.google.android.gms.common.SignInButton
+                            android:id="@+id/sign_in_button"
+                            app.isDarkTheme="true"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"></com.google.android.gms.common.SignInButton>
+
+                        <Button
+                            android:id="@+id/loginButton"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_weight="1"
+                            android:text="Next"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/registerButton"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/mybutton_register"
+                            android:fontFamily="@font/exo"
+                            android:text="@string/action_register"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textStyle="bold" />
+                    </android.support.design.widget.TextInputLayout>
+                    <![CDATA[
+
+
+
+                     android:id="@+id/sign_in_button"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+
+
+                ]]>
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
